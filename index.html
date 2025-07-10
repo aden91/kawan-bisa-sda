@@ -73,22 +73,24 @@
                 <!-- Logo PSI di Kiri -->
                 <div class="w-1/4 flex justify-start">
                     <a href="https://www.instagram.com/dpdpsisidoarjo/" target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" title="Kunjungi Instagram PSI Sidoarjo">
+                        <!-- PERUBAHAN UKURAN LOGO -->
                         <img src="logo-psi.png" alt="Logo PSI" class="w-12 h-12 rounded-full">
                     </a>
                 </div>
                 <!-- Tengah: Judul -->
                 <div class="w-1/2 text-center">
-                    <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent" data-translate-key="app_title">KAWAN BISA</h1>
+                    <h1 class="text-xl font-bold bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent" data-translate-key="app_title">KAWAN BISA</h1>
                     <p class="text-xs text-gray-500 mt-1" data-translate-key="app_subtitle">Kolaborasi PSI DPD SIDOARJO X BNN SIDOARJO</p>
                     <p id="datetime" class="text-[10px] text-gray-400 mt-1"></p>
                 </div>
                 <!-- Logo BNN & Pengaturan di Kanan -->
-                <div class="w-1/4 flex justify-end items-center gap-2">
+                <div class="w-1/4 flex justify-end items-center gap-4">
                      <a href="https://www.instagram.com/infobnn_kab_sidoarjo/?hl=en" target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" title="Kunjungi Instagram BNN Sidoarjo">
+                        <!-- PERUBAHAN UKURAN LOGO -->
                         <img src="logo-bnn.png" alt="Logo BNN" class="w-12 h-12 rounded-full">
                     </a>
                     <div class="relative">
-                        <button id="settings-button" class="p-2 rounded-full hover:bg-slate-200">
+                        <button id="settings-button" class="p-1 rounded-full hover:bg-slate-200">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         </button>
                         <div id="settings-menu" class="hidden absolute top-12 right-0 bg-white rounded-lg shadow-lg p-4 w-48 z-20">
@@ -160,7 +162,6 @@
                     <h2 class="text-lg font-semibold mb-2" data-translate-key="screening_title">Screening Mandiri Risiko Narkoba</h2>
                     <p class="text-sm text-gray-600 mb-6" data-translate-key="screening_desc">Jawab pertanyaan berikut dengan jujur. Jawabanmu bersifat anonim dan hanya untuk membantumu memahami kondisimu.</p>
                     
-                    <!-- PERUBAHAN: Menambahkan 5 pertanyaan baru -->
                     <div class="space-y-4 text-sm">
                         <!-- Pertanyaan 1 -->
                         <div class="bg-white p-3 rounded-lg shadow-sm">
@@ -482,7 +483,7 @@
             const systemPrompt = `Anda adalah "KAWAN BISA", chatbot AI ramah dari Sidoarjo. Jawab pertanyaan pengguna dalam bahasa ${currentLang === 'id' ? 'Indonesia' : 'English'}. Konteks: bahaya narkoba, rehabilitasi, hukum di Indonesia, cara hidup sehat. Jawab dengan empatik dan faktual. Jika ada krisis, sarankan hubungi hotline di menu Bantuan.`;
             
             const chatHistory = [{ role: "user", parts: [{ text: systemPrompt + "\n\nPertanyaan Pengguna: " + userInput }] }];
-            const apiKey = ""; 
+            const apiKey = "AIzaSyCCNIfFkPr3DlhBIJ9JljyD7P5GgFyTcA4"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             const payload = { contents: chatHistory, generationConfig: { temperature: 0.7, topK: 1, topP: 1, maxOutputTokens: 8192 } };
 
@@ -624,3 +625,7 @@
 
 </body>
 </html>
+" in the document "Aplikasi Web KAWAN BISA (Update Screening Lengkap)".
+I want to make the following changes:
+Change the font of the entire page to a more modern font.
+I have also provided the new content for the chang
